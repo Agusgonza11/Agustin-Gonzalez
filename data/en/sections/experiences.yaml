@@ -1,0 +1,46 @@
+section:
+  name: Experience
+  id: experiences
+  enable: false
+  weight: 3
+  showOnNavbar: false
+
+experiences:
+  - company:
+      name: SAP
+      url: "https://www.sap.com"
+      location: Buenos Aires, Argentina
+      overview: Backend development in SAP and OneStream environments for enterprise planning and reporting solutions.
+    positions:
+      - designation: Backend Developer
+        start: Dec 2025
+        responsibilities:
+          - Design and implementation of new features in SAP backend solutions.
+          - Evolution and maintenance of existing modules in production environments.
+          - Development of integrations and extensions on the OneStream platform.
+          - Collaboration with functional and technical teams to bring business requirements into production.
+
+  - company:
+      name: Freelance — Courts of Lomas de Zamora, Lanús and Avellaneda
+      location: Greater Buenos Aires, Argentina
+      overview: Freelance work with strict deadlines and regulated documentation.
+    positions:
+      - designation: Mechanical Expert Witness
+        start: Jan 2019
+        end: Nov 2025
+        responsibilities:
+          - Writing technical and judicial expert reports.
+          - Mechanical inspection of accident-damaged vehicles.
+          - Task coordination under tight delivery deadlines.
+
+  - company:
+      name: Siderúrgica Barbieri S.A.
+      location: Greater Buenos Aires, Argentina
+      overview: Mechanical maintenance internship during the final cycle of technical high school.
+    positions:
+      - designation: Maintenance Staff
+        start: Jan 2018
+        end: Dec 2018
+        responsibilities:
+          - Preventive and corrective maintenance in an industrial plant.
+          - Failure reporting and operational task follow-up.

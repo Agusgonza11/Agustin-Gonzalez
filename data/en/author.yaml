@@ -1,0 +1,15 @@
+name: "Agustin Nicolas Gonzalez"
+greeting: "Hi, I'm"
+degree: "Computer Engineer"
+subtitle: "Backend Developer"
+image: ""
+contactInfo:
+  email: "agustinnicog2000@gmail.com"
+  github: Agusgonza11
+  linkedin: agustingonzalez
+
+heroAboutLabel: "About Me"
+heroProjectsLabel: "Projects"
+
+summary:
+  - Graduate — Faculty of Engineering, UBA

@@ -1,0 +1,303 @@
+section:
+  name: Projects
+  id: proyectos
+  enable: true
+  weight: 5
+  showOnNavbar: true
+  template: sections/proyectos.html
+
+buttons:
+  - name: Thesis
+    filter: tesis
+  - name: Kioskito
+    filter: kioskito
+  - name: University projects
+    filter: universitarios
+
+languageGroups:
+  - name: Python
+    icon: fab fa-python
+  - name: Rust
+    icon: fas fa-cog
+  - name: Ruby
+    icon: fas fa-gem
+  - name: Java
+    icon: fab fa-java
+  - name: C++
+    icon: fas fa-code
+  - name: C
+    icon: fas fa-code
+  - name: Node.js
+    icon: fab fa-node-js
+  - name: Assembler
+    icon: fas fa-microchip
+  - name: Smalltalk
+    icon: fas fa-comment-dots
+
+projects:
+  - name: CI Pipeline — Standardization for Inscopix & CAIMAN
+    logo: fas fa-flask
+    role: Co-author — Undergraduate thesis
+    timeline: "2024 - 2025"
+    repo: https://github.com/CGK-Laboratory/ci_pipe
+    url: https://www.preprints.org/manuscript/202601.2405
+    summary: |
+      We developed a data standardization pipeline for **Inscopix** and **CAIMAN** laboratory technologies from CGK Laboratory (United States), aimed at unifying and reproducing analysis workflows in computational neuroscience.
+
+      The work culminated in an **official approved preprint** published on Preprints.org, openly available to the scientific community.
+
+      - [GitHub repository](https://github.com/CGK-Laboratory/ci_pipe)
+      - [Approved preprint on Preprints.org](https://www.preprints.org/manuscript/202601.2405)
+    tags: ["tesis"]
+
+  - name: Kiosquito — ERP for small businesses
+    logo: fas fa-store
+    role: Developer & author — Commercial product
+    timeline: "2024 - Present"
+    summary: |
+      **Kiosquito** is a lightweight **ERP** for kiosks, grocery stores, butcher shops and small retailers.
+      I developed and sell it on MercadoLibre: customers receive an installer and license key; internet is only required on first launch, then it runs **fully offline**.
+
+      **Modules:** Inventory · Sales · Suppliers · Analytics · PDF invoicing · Date analysis.
+    gallery:
+      - /images/projects/kioskito/1.png
+      - /images/projects/kioskito/2.png
+      - /images/projects/kioskito/3.png
+      - /images/projects/kioskito/4.png
+      - /images/projects/kioskito/5.png
+      - /images/projects/kioskito/6.png
+    tags: ["kioskito"]
+
+  - name: TP1 — Distributed Systems
+    logo: fab fa-python
+    role: Developer
+    timeline: "2024"
+    repo: https://github.com/Agusgonza11/MisProyectos/tree/main/Lenguaje%20Python/sistemas%20distribuidos/DISTRIBUIDOS-TP1-master
+    summary: "Scalable, fault-tolerant application for distributed dataset queries using **RabbitMQ**."
+    language: Python
+    tags: ["universitarios"]
+
+  - name: TP0 — Distributed Systems
+    logo: fab fa-python
+    role: Developer
+    timeline: "2024"
+    repo: https://github.com/Agusgonza11/MisProyectos/tree/main/Lenguaje%20Python/sistemas%20distribuidos/Distribuidos-TP0-master
+    summary: "Distributed execution, IPC, concurrency and **Docker** exercises."
+    language: Python
+    tags: ["universitarios"]
+
+  - name: Data Organization
+    logo: fab fa-python
+    role: Developer
+    timeline: "2023 - 2024"
+    repo: https://github.com/Agusgonza11/MisProyectos/tree/main/Lenguaje%20Python/organizacion%20de%20datos%20
+    summary: "Database queries with **Spark**, **scikit-learn** and **matplotlib** for ML and visualization."
+    language: Python
+    tags: ["universitarios"]
+
+  - name: File Transfer
+    logo: fab fa-python
+    role: Developer
+    timeline: "2023"
+    repo: https://github.com/Agusgonza11/MisProyectos/tree/main/Lenguaje%20Python/redes%20y%20aplicaciones%20distribuidas/file-transfer
+    summary: "Low-level file transfer system with custom filters."
+    language: Python
+    tags: ["universitarios"]
+
+  - name: SDN Firewall
+    logo: fab fa-python
+    role: Developer
+    timeline: "2023"
+    repo: https://github.com/Agusgonza11/MisProyectos/tree/main/Lenguaje%20Python/redes%20y%20aplicaciones%20distribuidas/sdn
+    summary: "Customizable firewall using **Software-Defined Networking**."
+    language: Python
+    tags: ["universitarios"]
+
+  - name: Bitcoin Node (23C1-Rusteze)
+    logo: fas fa-coins
+    role: Team developer
+    timeline: "2023"
+    repo: https://github.com/Agusgonza11/MisProyectos/tree/main/Lenguaje%20Rust/taller%20de%20programacion%20/grupal/23C1-Rusteze
+    summary: "Full Bitcoin node with mining, transactions, wallets and a **GTK** graphical interface."
+    language: Rust
+    tags: ["universitarios"]
+
+  - name: Chess
+    logo: fas fa-chess
+    role: Developer
+    timeline: "2023"
+    repo: https://github.com/Agusgonza11/MisProyectos/tree/main/Lenguaje%20Rust/taller%20de%20programacion%20/individual/ajedrez
+    summary: "Chess game developed in Rust."
+    language: Rust
+    tags: ["universitarios"]
+
+  - name: ConcuRide
+    logo: fas fa-car
+    role: Developer
+    timeline: "2024"
+    repo: https://github.com/Agusgonza11/MisProyectos/tree/main/Lenguaje%20Rust/Tecnicas%20de%20programacion%20concurrentes/2024-2c-tp2-rustico-main
+    summary: "Distributed simulation connecting passengers and drivers with a focus on concurrency and scalability."
+    language: Rust
+    tags: ["universitarios"]
+
+  - name: TP1 — Distributed query (Rust)
+    logo: fas fa-cog
+    role: Developer
+    timeline: "2024"
+    repo: https://github.com/Agusgonza11/MisProyectos/tree/main/Lenguaje%20Rust/Tecnicas%20de%20programacion%20concurrentes/2024-2c-tp1-Agusgonza11-main
+    summary: "Distributed and concurrent query over a Kaggle dataset."
+    language: Rust
+    tags: ["universitarios"]
+
+  - name: Battleship (TLD)
+    logo: fas fa-ship
+    role: Developer
+    timeline: "2023"
+    repo: https://github.com/Agusgonza11/MisProyectos/tree/main/Lenguaje%20Rust/TLD
+    summary: "Multiplayer battleship game with concurrent threads."
+    language: Rust
+    tags: ["universitarios"]
+
+  - name: RESP-API — Restaurant + Telegram Bot
+    logo: fas fa-gem
+    role: Team developer
+    timeline: "2023"
+    repo: https://github.com/Agusgonza11/MisProyectos/tree/main/Lenguaje%20Ruby/metodos%20y%20modelos%20en%20la%20ingenieria%20del%20software%20II/tp2
+    summary: "REST API and Telegram bot with hexagonal architecture, microservices and database. SCRUM, TDD and BDD."
+    language: Ruby
+    tags: ["universitarios"]
+
+  - name: Agustin_GO
+    logo: fas fa-gem
+    role: Developer
+    timeline: "2023"
+    repo: https://github.com/Agusgonza11/MisProyectos/tree/main/Lenguaje%20Ruby/metodos%20y%20modelos%20en%20la%20ingenieria%20del%20software%20II/agustin_go
+    summary: "Individual Ruby exercises with test-driven methodologies."
+    language: Ruby
+    tags: ["universitarios"]
+
+  - name: JobVacancy
+    logo: fas fa-gem
+    role: Developer
+    timeline: "2022"
+    repo: https://github.com/Agusgonza11/MisProyectos/tree/main/Lenguaje%20Ruby/jobvacancy
+    summary: "Pair programming project with agile methodologies."
+    language: Ruby
+    tags: ["universitarios"]
+
+  - name: JobVacancyPareja
+    logo: fas fa-gem
+    role: Developer
+    timeline: "2022"
+    repo: https://github.com/Agusgonza11/MisProyectos/tree/main/Lenguaje%20Ruby/jobvacancypareja
+    summary: "Pair programming applying agile methodologies."
+    language: Ruby
+    tags: ["universitarios"]
+
+  - name: TP1 Roma — Agile methodologies
+    logo: fas fa-gem
+    role: Team developer
+    timeline: "2022"
+    repo: https://github.com/Agusgonza11/MisProyectos/tree/main/Lenguaje%20Ruby/metodos%20y%20modelos%20en%20la%20ingenieria%20del%20software%20II/tp1/roma
+    summary: "Group exercises for agile team management."
+    language: Ruby
+    tags: ["universitarios"]
+
+  - name: Bank Project
+    logo: fab fa-java
+    role: Developer
+    timeline: "2022"
+    repo: https://github.com/Agusgonza11/MisProyectos/tree/main/Lenguaje%20Java/proyectoBanco
+    summary: "Banking system with **MVC**, **Spring Boot** and **PostgreSQL**. Transactions and dependency injection."
+    language: Java
+    tags: ["universitarios"]
+
+  - name: Dune2000
+    logo: fas fa-code
+    role: Developer
+    timeline: "2021"
+    repo: https://github.com/Agusgonza11/MisProyectos/tree/main/Lenguaje%20C%2B%2B/taller%20de%20programacion%20(veiga%20C%2B%2B)/tallerI
+    summary: "Age of Empires-style game with multiplayer, threads and a graphical interface."
+    language: C++
+    tags: ["universitarios"]
+
+  - name: Algorithms & Programming II
+    logo: fas fa-code
+    role: Developer
+    timeline: "2020 - 2021"
+    repo: https://github.com/Agusgonza11/MisProyectos/tree/main/Lenguaje%20C/algoritmos%20y%20programacion%20II%20
+    summary: "Data structures: queues, linked lists, graphs and stacks."
+    language: C
+    tags: ["universitarios"]
+
+  - name: Fork — Operating Systems
+    logo: fas fa-code
+    role: Developer
+    timeline: "2022"
+    repo: https://github.com/Agusgonza11/MisProyectos/tree/main/Lenguaje%20C/sistemas_operativos/Individual
+    summary: "Process implementation using `fork`."
+    language: C
+    tags: ["universitarios"]
+
+  - name: Shell — Operating Systems
+    logo: fas fa-terminal
+    role: Developer
+    timeline: "2022"
+    repo: https://github.com/Agusgonza11/MisProyectos/tree/main/Lenguaje%20C/sistemas_operativos/Individual
+    summary: "Basic shell implementation."
+    language: C
+    tags: ["universitarios"]
+
+  - name: TP1 — malloc implementation
+    logo: fas fa-memory
+    role: Team developer
+    timeline: "2022"
+    repo: https://github.com/Agusgonza11/MisProyectos/tree/main/Lenguaje%20C/sistemas_operativos/tp1/sisop_2022b_g26/malloc
+    summary: "Low-level `malloc` implementation."
+    language: C
+    tags: ["universitarios"]
+
+  - name: TP2 — malloc & Scheduling
+    logo: fas fa-memory
+    role: Team developer
+    timeline: "2022"
+    repo: https://github.com/Agusgonza11/MisProyectos/tree/main/Lenguaje%20C/sistemas_operativos/tp2/sisop_2022b_g26
+    summary: "Extended `malloc` and scheduling algorithm."
+    language: C
+    tags: ["universitarios"]
+
+  - name: TP3 — Filesystem
+    logo: fas fa-folder-open
+    role: Team developer
+    timeline: "2022"
+    repo: https://github.com/Agusgonza11/MisProyectos/tree/main/Lenguaje%20C/sistemas_operativos/tp3/sisop_2022b_g28
+    summary: "Filesystem implementation in C."
+    language: C
+    tags: ["universitarios"]
+
+  - name: DuoLibros
+    logo: fab fa-node-js
+    role: Developer
+    timeline: "2023"
+    repo: https://github.com/Agusgonza11/MisProyectos/tree/main/Lenguaje%20Node/DuoLibros%20main
+    summary: "REST API with backend and frontend inspired by **Goodreads**: reviews, likes and user interactions."
+    language: Node.js
+    tags: ["universitarios"]
+
+  - name: Computer Organization (Assembler)
+    logo: fas fa-microchip
+    role: Developer
+    timeline: "2019"
+    repo: https://github.com/Agusgonza11/MisProyectos/tree/main/Lenguaje%20Assembler/organizacion%20del%20computador
+    summary: "Assembler exercises: matrix rotation, iteration, sums and multiplications."
+    language: Assembler
+    tags: ["universitarios"]
+
+  - name: Algorithms & Programming III (Smalltalk)
+    logo: fas fa-comment-dots
+    role: Developer
+    timeline: "2021"
+    repo: https://github.com/Agusgonza11/MisProyectos/tree/main/Lenguaje%20Smalltalk/algoritmos%20y%20programacion%20III%20(smalltalk)
+    summary: "Smalltalk exercises with OOP using Pharo."
+    language: Smalltalk
+    tags: ["universitarios"]

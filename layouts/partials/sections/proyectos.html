@@ -1,0 +1,75 @@
+{{ $sectionID := .section.id | default "proyectos" }}
+
+<div class="container-fluid anchor pb-5 projects-section" id="{{ $sectionID }}">
+  <h1 class="text-center section-main-title">
+    <span id="{{ $sectionID }}-title"></span>{{ .section.name }}
+  </h1>
+
+  <div class="container ms-auto text-center project-tab-buttons">
+    {{ range $index, $button := .buttons }}
+      <button
+        type="button"
+        class="btn btn-dark project-tab-btn{{ if eq $index 0 }} active{{ end }}"
+        data-tab="{{ $button.filter }}"
+      >
+        {{ $button.name }}
+      </button>
+    {{ end }}
+  </div>
+
+  {{ range $index, $button := .buttons }}
+    <div class="container project-tab-panel{{ if eq $index 0 }} active{{ end }}" data-tab="{{ $button.filter }}">
+      {{ if eq $button.filter "universitarios" }}
+        <div class="accordion project-lang-accordion" id="accordion-{{ $sectionID }}">
+          {{ range $gIndex, $group := $.languageGroups }}
+            {{ $groupID := printf "%s-lang-%d" $sectionID $gIndex }}
+            <div class="accordion-item project-lang-group">
+              <h2 class="accordion-header" id="heading-{{ $groupID }}">
+                <button
+                  class="accordion-button{{ if gt $gIndex 0 }} collapsed{{ end }}"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse-{{ $groupID }}"
+                  aria-expanded="{{ if eq $gIndex 0 }}true{{ else }}false{{ end }}"
+                  aria-controls="collapse-{{ $groupID }}"
+                >
+                  <span class="project-lang-icon me-2"><i class="{{ $group.icon }}"></i></span>
+                  {{ $group.name }}
+                </button>
+              </h2>
+              <div
+                id="collapse-{{ $groupID }}"
+                class="accordion-collapse collapse{{ if eq $gIndex 0 }} show{{ end }}"
+                aria-labelledby="heading-{{ $groupID }}"
+                data-bs-parent="#accordion-{{ $sectionID }}"
+              >
+                <div class="accordion-body p-0">
+                  <div class="row project-tab-row m-0">
+                    {{ range $.projects }}
+                      {{ if and (in .tags "universitarios") (eq .language $group.name) }}
+                        {{ partial "cards/project" . }}
+                      {{ end }}
+                    {{ end }}
+                  </div>
+                </div>
+              </div>
+            </div>
+          {{ end }}
+        </div>
+      {{ else }}
+        <div class="row project-tab-row">
+          {{ range $.projects }}
+            {{ if in .tags $button.filter }}
+              {{ partial "cards/project" . }}
+            {{ end }}
+          {{ end }}
+        </div>
+      {{ end }}
+    </div>
+  {{ end }}
+
+  <div id="project-lightbox" class="project-lightbox" hidden>
+    <button type="button" class="project-lightbox-close" aria-label="Cerrar">&times;</button>
+    <img id="project-lightbox-img" src="" alt="Vista ampliada" />
+  </div>
+</div>

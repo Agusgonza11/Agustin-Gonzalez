@@ -1,0 +1,531 @@
+/* CV personalizado - Agustin Gonzalez */
+
+.home-minimal {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(145deg, #0f172a 0%, #1e293b 45%, #334155 100%);
+
+  .background {
+    display: none;
+  }
+
+  .home-minimal-backdrop {
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(circle at 20% 20%, rgba(56, 189, 248, 0.18), transparent 40%),
+      radial-gradient(circle at 80% 70%, rgba(99, 102, 241, 0.2), transparent 35%);
+    pointer-events: none;
+  }
+
+  .content {
+    position: relative;
+    top: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    padding: 0 1.5rem;
+  }
+
+  .home-eyebrow {
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    opacity: 0.85;
+    margin-bottom: 0.75rem;
+  }
+
+  .home-name {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+
+    @media (min-width: 768px) {
+      font-size: 3.5rem;
+    }
+
+    @media (min-width: 1200px) {
+      font-size: 4.5rem;
+    }
+  }
+
+  .home-degree {
+    font-size: 1.35rem;
+
+    @media (min-width: 768px) {
+      font-size: 1.65rem;
+    }
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: inherit;
+    opacity: 1;
+  }
+
+  .home-role {
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 1.25rem;
+  }
+
+  .home-tagline {
+    margin: 0 0 1.75rem;
+    opacity: 0.9;
+    font-size: 1rem;
+  }
+
+  .home-cta-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+  }
+
+  .home-cta-btn {
+    min-width: 9.5rem;
+    padding: 0.55rem 1.35rem;
+    font-weight: 600;
+  }
+}
+
+html[data-theme='dark'] .home-minimal {
+  background: linear-gradient(145deg, #020617 0%, #0f172a 50%, #1e293b 100%);
+}
+
+html[data-theme='dark'] .sobre-mi-section {
+  .about-uba-panel {
+    background:
+      radial-gradient(circle at 50% 35%, rgba(56, 189, 248, 0.12), transparent 58%),
+      linear-gradient(165deg, rgba(15, 23, 42, 0.55), rgba(30, 41, 59, 0.35));
+    border-color: rgba(148, 163, 184, 0.16);
+    box-shadow: 0 18px 40px rgba(2, 6, 23, 0.35);
+  }
+
+  .about-role,
+  .about-uba-caption,
+  .text-muted {
+    color: #b8c9e3 !important;
+  }
+
+  .skill-card-title {
+    color: get-dark-color('heading-color');
+  }
+
+  .education-card,
+  .experience-card {
+    .card-title,
+    h6 {
+      color: get-dark-color('heading-color');
+    }
+
+    p,
+    li {
+      color: get-dark-color('text-color');
+    }
+  }
+}
+
+html[data-theme='dark'] .projects-section {
+  .project-lang-accordion {
+    .accordion-item {
+      background: get-dark-color('bg-card');
+      border-color: rgba(148, 163, 184, 0.22);
+    }
+
+    .accordion-button {
+      color: get-dark-color('heading-color');
+      background-color: get-dark-color('bg-card');
+
+      &:not(.collapsed) {
+        color: get-dark-color('heading-color');
+        background-color: get-dark-color('bg-secondary');
+      }
+
+      &::after {
+        filter: brightness(0) invert(1);
+      }
+    }
+
+    .accordion-body {
+      background-color: get-dark-color('bg-primary');
+      color: get-dark-color('text-color');
+    }
+  }
+
+  .project-card-uniform {
+    .card-header,
+    .card-body {
+      color: get-dark-color('text-color');
+    }
+
+    .card-title {
+      color: get-dark-color('heading-color');
+    }
+
+    .sub-title {
+      color: #b8c9e3;
+    }
+
+    .project-summary {
+      color: get-dark-color('text-color');
+
+      p,
+      li {
+        color: get-dark-color('text-color');
+      }
+
+      strong {
+        color: get-dark-color('heading-color') !important;
+      }
+    }
+  }
+}
+
+.sobre-mi-section {
+  .section-main-title {
+    margin-bottom: 1.5rem;
+  }
+
+  .subsection-title {
+    font-size: 1.6rem;
+    margin: 2.5rem 0 1.5rem;
+    position: relative;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 56px;
+      height: 3px;
+      margin: 0.65rem auto 0;
+      border-radius: 999px;
+      background: var(--accent-color, #38bdf8);
+    }
+  }
+
+  .about-name {
+    font-weight: 600;
+  }
+
+  .about-role {
+    color: #475569;
+  }
+
+  .about-intro-row {
+    align-items: stretch;
+  }
+
+  .about-intro-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .about-intro-visual {
+    display: flex;
+    min-height: 20rem;
+  }
+
+  .about-uba-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 20rem;
+    padding: 2.5rem 2rem;
+    border-radius: 1.25rem;
+    background:
+      radial-gradient(circle at 50% 35%, rgba(56, 189, 248, 0.14), transparent 58%),
+      linear-gradient(165deg, rgba(255, 255, 255, 0.06), rgba(148, 163, 184, 0.04));
+    border: 1px solid rgba(148, 163, 184, 0.22);
+    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.12);
+  }
+
+  .about-uba-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex: 1;
+    padding: 0.5rem 0;
+  }
+
+  .about-profile-img {
+    width: 100%;
+    max-width: 26rem;
+    max-height: 18rem;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+    filter: drop-shadow(0 10px 24px rgba(15, 23, 42, 0.18));
+  }
+
+  .about-uba-caption {
+    margin: 1rem 0 0;
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #475569;
+    text-align: center;
+  }
+
+  @media (min-width: 992px) {
+    .about-intro-visual {
+      min-height: 100%;
+    }
+
+    .about-uba-panel {
+      min-height: 100%;
+      padding: 3rem 2.5rem;
+    }
+
+    .about-profile-img {
+      width: 100%;
+      max-width: none;
+      max-height: 22rem;
+    }
+  }
+
+  .skills-grid {
+    --bs-gutter-x: 1rem;
+    --bs-gutter-y: 1rem;
+  }
+
+  .skill-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem 0.5rem;
+    border-radius: 0.75rem;
+    border: 1px solid rgba(148, 163, 184, 0.2);
+    background: var(--bg-card, rgba(255, 255, 255, 0.03));
+    min-height: 7.5rem;
+    transition: border-color 0.2s ease, transform 0.2s ease;
+
+    &:hover {
+      border-color: rgba(56, 189, 248, 0.45);
+      transform: translateY(-2px);
+    }
+  }
+
+  .skill-card-icon {
+    font-size: 1.75rem;
+    line-height: 1;
+    margin-bottom: 0.65rem;
+    color: var(--accent-color, #38bdf8);
+
+    img {
+      width: 28px;
+      height: 28px;
+      object-fit: contain;
+    }
+  }
+
+  .skill-card-title {
+    margin: 0;
+    font-size: 0.82rem;
+    font-weight: 600;
+    line-height: 1.25;
+    word-break: break-word;
+  }
+
+  .experience-card {
+    border-radius: 0.75rem;
+  }
+
+  .text-muted {
+    color: #475569 !important;
+  }
+
+  .education-card,
+  .experience-card {
+    .card-title,
+    h6 {
+      color: get-light-color('heading-color');
+    }
+  }
+}
+
+.education-block {
+  .education-card {
+    border-radius: 0.75rem;
+  }
+
+  .education-icon {
+    font-size: 1.5rem;
+    color: var(--accent-color, #38bdf8);
+    min-width: 2rem;
+  }
+}
+
+.projects-section {
+  .section-main-title {
+    margin-bottom: 1.5rem;
+  }
+
+  .project-tab-buttons {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .project-tab-btn.active {
+    box-shadow: 0 0 0 0.15rem rgba(56, 189, 248, 0.35);
+  }
+
+  .project-tab-panel {
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
+
+  .project-lang-accordion {
+    .accordion-item {
+      border-radius: 0.5rem;
+      overflow: hidden;
+      margin-bottom: 0.75rem;
+      border: 1px solid rgba(148, 163, 184, 0.28);
+      background: get-light-color('bg-card');
+    }
+
+    .accordion-button {
+      font-weight: 600;
+      font-size: 1.05rem;
+      color: get-light-color('heading-color');
+      background-color: get-light-color('bg-card');
+
+      &:not(.collapsed) {
+        color: get-light-color('heading-color');
+        background-color: get-light-color('bg-secondary');
+        box-shadow: none;
+      }
+
+      &:focus {
+        box-shadow: none;
+        border-color: rgba(56, 189, 248, 0.35);
+      }
+    }
+
+    .accordion-body {
+      background-color: get-light-color('bg-primary');
+      color: get-light-color('text-color');
+    }
+  }
+
+  .project-card-uniform {
+    .card-title {
+      color: get-light-color('heading-color');
+    }
+
+    .sub-title {
+      color: #475569;
+    }
+
+    .project-summary {
+      color: get-light-color('text-color');
+
+      p,
+      li {
+        color: get-light-color('text-color');
+      }
+
+      strong {
+        color: get-light-color('heading-color') !important;
+      }
+    }
+  }
+
+  .project-tab-row {
+    --bs-gutter-y: 1rem;
+  }
+
+  .project-card-uniform {
+    border-radius: 0.75rem;
+    overflow: hidden;
+  }
+
+  .project-card-header {
+    padding: 1rem 1.1rem 0.75rem;
+  }
+
+  .project-lang-icon {
+    font-size: 1.5rem;
+    width: 2rem;
+    text-align: center;
+    color: var(--accent-color, #38bdf8);
+  }
+
+  .project-logo-img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+  }
+
+  .project-summary {
+    min-height: 4rem;
+  }
+
+  .project-gallery-trigger {
+    cursor: zoom-in;
+    display: block;
+  }
+
+  .project-gallery-img {
+    border: 1px solid rgba(148, 163, 184, 0.25);
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+    &:hover {
+      transform: scale(1.02);
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.18);
+    }
+  }
+
+  .project-lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+    background: rgba(2, 6, 23, 0.92);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+
+    &[hidden] {
+      display: none !important;
+    }
+
+    img {
+      max-width: 95%;
+      width: auto;
+      max-height: 90vh;
+      object-fit: contain;
+      border-radius: 0.5rem;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+    }
+  }
+
+  .project-lightbox-close {
+    position: absolute;
+    top: 1rem;
+    right: 1.25rem;
+    border: 0;
+    background: transparent;
+    color: #fff;
+    font-size: 2.5rem;
+    line-height: 1;
+    cursor: pointer;
+  }
+}

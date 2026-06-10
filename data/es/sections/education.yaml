@@ -1,0 +1,29 @@
+section:
+  name: Formación
+  id: education
+  enable: false
+  weight: 4
+  showOnNavbar: false
+
+degrees:
+  - name: Ingeniero en Informática
+    icon: fa-graduation-cap
+    timeframe: 2019 - 2025
+    institution:
+      name: Facultad de Ingeniería, Universidad de Buenos Aires (UBA)
+      url: "https://www.uba.ar"
+    customSections:
+      - name: Estado
+        content: |
+          **Egresado.** Todas las materias aprobadas. Tesis de grado entregada en diciembre de 2025.
+
+  - name: Maestro Mayor de Obras
+    icon: fa-tools
+    timeframe: 2012 - 2018
+    institution:
+      name: Instituto Tecnológico San Bonifacio — Lomas de Zamora
+    customSections:
+      - name: Formación
+        content: |
+          Título técnico secundario con formación en dibujo técnico y modelado arquitectónico.
+          Cursos extracurriculares en AutoCAD 2D/3D y SketchUp.

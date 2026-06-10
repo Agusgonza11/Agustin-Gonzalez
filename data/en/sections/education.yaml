@@ -1,0 +1,29 @@
+section:
+  name: Education
+  id: education
+  enable: false
+  weight: 4
+  showOnNavbar: false
+
+degrees:
+  - name: Computer Engineering
+    icon: fa-graduation-cap
+    timeframe: 2019 - 2025
+    institution:
+      name: Faculty of Engineering, University of Buenos Aires (UBA)
+      url: "https://www.uba.ar"
+    customSections:
+      - name: Status
+        content: |
+          **Graduated.** All courses completed. Undergraduate thesis delivered in December 2025.
+
+  - name: Master Builder (Maestro Mayor de Obras)
+    icon: fa-tools
+    timeframe: 2012 - 2018
+    institution:
+      name: Instituto Tecnológico San Bonifacio — Lomas de Zamora
+    customSections:
+      - name: Training
+        content: |
+          Secondary technical degree with training in technical drawing and architectural modeling.
+          Extracurricular courses in AutoCAD 2D/3D and SketchUp.

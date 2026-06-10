@@ -1,0 +1,171 @@
+{{ $sectionID := .section.id | default "sobre-mi" }}
+{{ $langData := index hugo.Data site.Language.Lang }}
+{{ $about := $langData.sections.about }}
+{{ $skills := $langData.sections.skills }}
+{{ $experiences := $langData.sections.experiences }}
+{{ $education := $langData.sections.education }}
+
+{{ $author := $langData.author }}
+{{ if not $author }}
+  {{ $author = hugo.Data.author }}
+{{ end }}
+
+<div class="container-fluid anchor pb-5 sobre-mi-section" id="{{ $sectionID }}">
+  <h1 class="text-center section-main-title">
+    <span id="{{ $sectionID }}-title"></span>{{ .section.name }}
+  </h1>
+
+  <div class="container anchor p-lg-5 about-section">
+    <div class="row pt-sm-2 pt-md-4 about-intro-row">
+      <div class="col-lg-7 about-intro-text">
+        <h3 class="p-1 about-name">{{ $author.name }}</h3>
+        {{ if $about.designation }}
+          <h5 class="p-1 about-role">
+            {{ $about.designation }}
+            {{ if $about.company }}
+              {{ i18n "at" }} <a href="{{ $about.company.url }}" title="{{ $about.company.name }}" target="_blank" rel="noopener">{{ $about.company.name }}</a>
+            {{ end }}
+          </h5>
+        {{ end }}
+        <p class="p-1 text-justify about-summary">
+          {{ $about.summary | markdownify }}
+        </p>
+        <div class="text-container ms-auto">
+          <ul class="social-link d-flex">
+            {{ range $about.socialLinks }}
+              <li>
+                {{ if eq .name "Email" }}
+                  <a href="mailto:{{ .url }}" title="{{ .name }}" target="_blank" rel="{{ .rel | default "noopener" }}"><i class="{{ .icon }}"></i></a>
+                {{ else }}
+                  <a href="{{ .url }}" title="{{ .name }}" target="_blank" rel="{{ .rel | default "noopener" }}"><i class="{{ .icon }}"></i></a>
+                {{ end }}
+              </li>
+            {{ end }}
+          </ul>
+        </div>
+        {{ range $about.resourceLinks }}
+          <a href="{{ .url | relURL }}" title="{{ .title }}" target="_blank" rel="noopener">
+            <button class="btn btn-dark">{{ .title }}</button>
+          </a>
+        {{ end }}
+      </div>
+      <div class="col-lg-5 pt-4 pt-lg-0 about-intro-visual">
+        {{ if $about.profileImage }}
+          {{ $profileImg := resources.Get $about.profileImage }}
+          {{ if $profileImg }}
+            <div class="about-uba-panel h-100">
+              <a
+                class="about-uba-link"
+                href="{{ $about.profileImageUrl | default "https://www.uba.ar" }}"
+                target="_blank"
+                rel="noopener"
+                title="Universidad de Buenos Aires"
+              >
+                {{ if and (ne $profileImg.MediaType.SubType "svg") (ne $profileImg.MediaType.SubType "gif") }}
+                  {{ $profileImg = $profileImg.Fit "960x640" }}
+                {{ end }}
+                <img class="about-profile-img" src="{{ $profileImg.RelPermalink }}" alt="Universidad de Buenos Aires" />
+              </a>
+              <p class="about-uba-caption">Universidad de Buenos Aires</p>
+            </div>
+          {{ end }}
+        {{ end }}
+      </div>
+    </div>
+  </div>
+
+  {{ if $skills.skills }}
+    <div class="container skills-block pb-4">
+      <h2 class="text-center subsection-title">{{ $skills.section.name }}</h2>
+      <div class="container">
+        <div class="row skills-grid justify-content-center">
+          {{ range $skills.skills }}
+            {{ partial "cards/skill.html" . }}
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  {{ end }}
+
+  {{ if $education.degrees }}
+    <div class="education-block container pb-4">
+      <h2 class="text-center subsection-title">{{ $education.section.name }}</h2>
+      <div class="row justify-content-center">
+        {{ range $education.degrees }}
+          <div class="col-md-6 col-lg-5 p-3">
+            <div class="card h-100 education-card">
+              <div class="card-body">
+                <div class="d-flex align-items-start gap-3">
+                  <div class="education-icon"><i class="fas {{ .icon }}"></i></div>
+                  <div>
+                    <h5 class="card-title mb-1">{{ .name }}</h5>
+                    <p class="text-muted mb-1"><small>{{ .timeframe }}</small></p>
+                    {{ if .institution }}
+                      <p class="mb-2">
+                        {{ if .institution.url }}
+                          <a href="{{ .institution.url }}" target="_blank" rel="noopener">{{ .institution.name }}</a>
+                        {{ else }}
+                          {{ .institution.name }}
+                        {{ end }}
+                      </p>
+                    {{ end }}
+                    {{ range .customSections }}
+                      <p class="mb-0 small">{{ .content | markdownify }}</p>
+                    {{ end }}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        {{ end }}
+      </div>
+    </div>
+  {{ end }}
+
+  {{ if $experiences.experiences }}
+    <div class="experiences-block container text-justify">
+      <h2 class="text-center subsection-title">{{ $experiences.section.name }}</h2>
+      {{ range $experiences.experiences }}
+        {{ $oldestPosition := index (last 1 .positions) 0 }}
+        {{ $mostRecentPosition := index (first 1 .positions) 0 }}
+        <div class="experience-card card mb-4">
+          <div class="card-body">
+            <div class="d-flex flex-wrap justify-content-between align-items-start gap-2 mb-2">
+              <div>
+                <h5 class="mb-1">
+                  {{ if .company.url }}
+                    <a href="{{ .company.url }}" target="_blank" rel="noopener">{{ .company.name }}</a>
+                  {{ else }}
+                    {{ .company.name }}
+                  {{ end }}
+                </h5>
+                <p class="text-muted mb-0">
+                  {{ $oldestPosition.start }} — {{ if $mostRecentPosition.end }}{{ $mostRecentPosition.end }}{{ else }}{{ i18n "present" }}{{ end }}
+                </p>
+              </div>
+              {{ if .company.location }}
+                <p class="text-muted mb-0"><i class="fa-solid fa-location-dot"></i> {{ .company.location }}</p>
+              {{ end }}
+            </div>
+            {{ if .company.overview }}
+              <p class="mb-3">{{ .company.overview | markdownify }}</p>
+            {{ end }}
+            {{ range .positions }}
+              <div class="experience-position mb-3">
+                <h6 class="mb-1">{{ .designation }}</h6>
+                <p class="text-muted small mb-2">{{ .start }} — {{ if .end }}{{ .end }}{{ else }}{{ i18n "present" }}{{ end }}</p>
+                {{ if .responsibilities }}
+                  <ul class="mb-0">
+                    {{ range .responsibilities }}
+                      <li>{{ . | markdownify }}</li>
+                    {{ end }}
+                  </ul>
+                {{ end }}
+              </div>
+            {{ end }}
+          </div>
+        </div>
+      {{ end }}
+    </div>
+  {{ end }}
+</div>

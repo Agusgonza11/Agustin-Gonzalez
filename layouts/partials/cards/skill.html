@@ -1,0 +1,17 @@
+<div class="col-6 col-sm-4 col-md-3 col-lg-2 skill-grid-item">
+  <div class="skill-card h-100">
+    <div class="skill-card-icon">
+      {{ if .icon }}
+        <i class="{{ .icon }}"></i>
+      {{ else if .logo }}
+        {{ $logoImage := resources.Get .logo }}
+        {{ if $logoImage }}
+          <img src="{{ $logoImage.RelPermalink }}" alt="{{ .name }}" />
+        {{ end }}
+      {{ else }}
+        <i class="fas fa-code"></i>
+      {{ end }}
+    </div>
+    <h6 class="skill-card-title">{{ .name }}</h6>
+  </div>
+</div>

@@ -1,0 +1,37 @@
+section:
+  name: Sobre Mí
+  id: sobre-mi
+  enable: true
+  weight: 1
+  showOnNavbar: true
+  template: sections/sobre-mi.html
+
+designation: Ingeniero en Informática · Desarrollador Backend
+company:
+  name: SAP
+  url: "https://www.sap.com"
+
+profileImage: /images/sections/uba.jpg
+profileImageUrl: "https://www.uba.ar"
+
+summary: |
+  Soy **Agustin Nicolas Gonzalez**, **Ingeniero en Informática** egresado de la Universidad de Buenos Aires. Construí una base técnica sólida a través de proyectos universitarios, desarrollo personal y experiencia en distintos ámbitos profesionales.
+
+  Busco seguir creciendo en el área de IT. Mi formación académica y mi experiencia previa en otros rubros me aportaron compromiso, responsabilidad y la capacidad de cumplir objetivos con plazos exigentes.
+
+  Actualmente me desempeño como **desarrollador backend** en SAP, participando en el desarrollo de soluciones empresariales y en proyectos sobre la plataforma **OneStream**.
+
+socialLinks:
+  - name: Email
+    icon: "fas fa-envelope"
+    url: "agustinnicog2000@gmail.com"
+
+  - name: Github
+    icon: "fab fa-github"
+    url: "https://github.com/Agusgonza11"
+
+  - name: LinkedIn
+    icon: "fab fa-linkedin"
+    url: "#"
+
+resourceLinks: []

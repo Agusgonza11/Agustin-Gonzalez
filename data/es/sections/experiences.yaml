@@ -1,0 +1,46 @@
+section:
+  name: Experiencia
+  id: experiences
+  enable: false
+  weight: 3
+  showOnNavbar: false
+
+experiences:
+  - company:
+      name: SAP
+      url: "https://www.sap.com"
+      location: Buenos Aires, Argentina
+      overview: Desarrollo backend en entornos SAP y OneStream para soluciones de planificación y reporting empresarial.
+    positions:
+      - designation: Desarrollador Backend
+        start: Dic 2025
+        responsibilities:
+          - Diseño e implementación de nuevas funcionalidades en soluciones backend SAP.
+          - Evolución y mantenimiento de módulos existentes en entornos productivos.
+          - Desarrollo de integraciones y extensiones en la plataforma OneStream.
+          - Colaboración con equipos funcionales y técnicos para llevar requerimientos de negocio a producción.
+
+  - company:
+      name: Autónomo — Juzgados de Lomas de Zamora, Lanús y Avellaneda
+      location: Zona Sur, GBA
+      overview: Trabajo autónomo con plazos de entrega estrictos y documentación bajo normativa.
+    positions:
+      - designation: Realización de Pericias Mecánicas
+        start: Ene 2019
+        end: Nov 2025
+        responsibilities:
+          - Redacción de informes técnicos y judiciales.
+          - Inspección mecánica de vehículos accidentados.
+          - Coordinación de tareas bajo fechas de entrega ajustadas.
+
+  - company:
+      name: Siderúrgica Barbieri S.A.
+      location: Zona Sur, GBA
+      overview: Pasantía en mantenimiento mecánico durante el ciclo final de la escuela técnica.
+    positions:
+      - designation: Personal de Mantenimiento
+        start: Ene 2018
+        end: Dic 2018
+        responsibilities:
+          - Mantenimiento preventivo y correctivo en planta industrial.
+          - Reporte de fallas y seguimiento de tareas operativas.

@@ -1,0 +1,28 @@
+{{ $author:= hugo.Data.author }}
+{{ if (index hugo.Data site.Language.Lang).author }}
+  {{ $author = (index hugo.Data site.Language.Lang).author }}
+{{ end }}
+
+{{ $name := "Agustin Gonzalez" }}
+{{ if $author.name }}
+  {{ $name = $author.name }}
+{{ end }}
+
+<div class="container-fluid home home-minimal" id="home">
+  <div class="home-minimal-backdrop"></div>
+  <div class="container content text-center">
+    <p class="home-eyebrow">{{ $author.greeting | default "Hola, soy" }}</p>
+    <h1 class="greeting home-name">{{ $name }}</h1>
+    <p class="home-degree">{{ $author.degree | default "Ingeniero en Informática" }}</p>
+    {{ if $author.subtitle }}
+      <h2 class="greeting-subtitle home-role">{{ $author.subtitle }}</h2>
+    {{ end }}
+    {{ if $author.summary }}
+      <p class="home-tagline">{{ index $author.summary 0 }}</p>
+    {{ end }}
+    <div class="home-cta-buttons">
+      <a href="#sobre-mi" class="btn btn-dark home-cta-btn">{{ $author.heroAboutLabel | default "Sobre Mí" }}</a>
+      <a href="#proyectos" class="btn btn-outline-light home-cta-btn">{{ $author.heroProjectsLabel | default "Proyectos" }}</a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,65 @@
+section:
+  name: Skills
+  id: skills
+  enable: false
+  weight: 2
+  showOnNavbar: false
+  filter: false
+
+skills:
+  - name: C
+    icon: fas fa-code
+  - name: C++
+    icon: fas fa-code
+  - name: Java
+    icon: fab fa-java
+  - name: Python
+    icon: fab fa-python
+  - name: Rust
+    icon: fas fa-cog
+  - name: Ruby
+    icon: fas fa-gem
+  - name: Smalltalk
+    icon: fas fa-comment-dots
+  - name: VB.NET
+    icon: fas fa-file-code
+  - name: Node.js
+    icon: fab fa-node-js
+  - name: SAP
+    icon: fas fa-industry
+  - name: OneStream
+    icon: fas fa-chart-line
+  - name: Spring Boot
+    icon: fas fa-leaf
+  - name: PostgreSQL
+    icon: fas fa-database
+  - name: MySQL
+    icon: fas fa-database
+  - name: MongoDB
+    icon: fas fa-database
+  - name: SQLite
+    icon: fas fa-database
+  - name: RabbitMQ
+    icon: fas fa-exchange-alt
+  - name: Docker
+    icon: fab fa-docker
+  - name: Git
+    icon: fab fa-git-alt
+  - name: Linux
+    icon: fab fa-linux
+  - name: Bash
+    icon: fas fa-terminal
+  - name: English
+    icon: fas fa-language
+  - name: Spark
+    icon: fas fa-bolt
+  - name: Pandas
+    icon: fas fa-table
+  - name: NumPy
+    icon: fas fa-calculator
+  - name: Scrum
+    icon: fas fa-users
+  - name: TDD / BDD
+    icon: fas fa-vial
+  - name: Hexagonal architecture
+    icon: fas fa-project-diagram

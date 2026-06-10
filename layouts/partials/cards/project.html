@@ -1,0 +1,61 @@
+<div class="col-12 p-2 project-grid-item">
+  <div class="card mt-1 project-card-uniform h-100">
+    <div class="card-header project-card-header">
+      <div class="d-flex align-items-center gap-2">
+        {{ if .logo }}
+          {{ if eq (len (findRE ".*/.*" .logo)) 0 }}
+            <span class="project-lang-icon"><i class="{{ .logo }}"></i></span>
+          {{ else }}
+            {{ $logoImage := resources.Get .logo }}
+            {{ if $logoImage }}
+              {{ if ne $logoImage.MediaType.SubType "svg" }}
+                {{ $logoImage = $logoImage.Fit "28x28" }}
+              {{ end }}
+              <img class="project-logo-img" src="{{ $logoImage.RelPermalink }}" alt="{{ .name }}" />
+            {{ end }}
+          {{ end }}
+        {{ end }}
+        <div class="flex-grow-1">
+          <h5 class="card-title mb-0">{{ .name }}</h5>
+          <div class="sub-title">
+            <span>{{ .role }}</span>
+            <span>{{ .timeline }}</span>
+          </div>
+        </div>
+        {{ if .repo }}
+          <a class="btn btn-outline-info btn-sm project-repo-btn" href="{{ .repo }}" target="_blank" rel="noopener">GitHub</a>
+        {{ else if .url }}
+          <a class="btn btn-outline-info btn-sm project-repo-btn" href="{{ .url }}" target="_blank" rel="noopener">{{ i18n "project_details" }}</a>
+        {{ end }}
+      </div>
+    </div>
+    <div class="card-body text-justify pt-2 pb-3">
+      <div class="project-summary">{{ .summary | markdownify }}</div>
+      {{ if .gallery }}
+        <div class="project-gallery row g-3 mt-2">
+          {{ range .gallery }}
+            {{ $fullImage := resources.Get . }}
+            {{ if $fullImage }}
+              {{ $thumbImage := $fullImage }}
+              {{ if ne $fullImage.MediaType.SubType "svg" }}
+                {{ $thumbImage = $fullImage.Fit "480x360" }}
+              {{ end }}
+              <div class="col-6 col-md-4 col-lg-3">
+                <button type="button" class="project-gallery-trigger p-0 border-0 bg-transparent w-100" data-full="{{ $fullImage.RelPermalink }}">
+                  <img class="img-fluid rounded project-gallery-img w-100" src="{{ $thumbImage.RelPermalink }}" alt="Captura de {{ $.name }}" loading="lazy" />
+                </button>
+              </div>
+            {{ end }}
+          {{ end }}
+        </div>
+      {{ end }}
+      {{ if .tags }}
+        <div class="project-tags-holder mt-3">
+          {{ range .tags }}
+            <span class="btn badge btn-info">{{ . }}</span>
+          {{ end }}
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,37 @@
+section:
+  name: About Me
+  id: sobre-mi
+  enable: true
+  weight: 1
+  showOnNavbar: true
+  template: sections/sobre-mi.html
+
+designation: Computer Engineer · Backend Developer
+company:
+  name: SAP
+  url: "https://www.sap.com"
+
+profileImage: /images/sections/uba.jpg
+profileImageUrl: "https://www.uba.ar"
+
+summary: |
+  I'm **Agustin Nicolas Gonzalez**, a **Computer Engineer** graduate from the University of Buenos Aires. I built a strong technical foundation through university projects, personal development, and professional experience across different fields.
+
+  I'm focused on growing my career in IT. My academic background and previous experience in other industries gave me commitment, responsibility, and the ability to deliver under tight deadlines.
+
+  I currently work as a **backend developer** at SAP, contributing to enterprise solutions and projects on the **OneStream** platform.
+
+socialLinks:
+  - name: Email
+    icon: "fas fa-envelope"
+    url: "agustinnicog2000@gmail.com"
+
+  - name: Github
+    icon: "fab fa-github"
+    url: "https://github.com/Agusgonza11"
+
+  - name: LinkedIn
+    icon: "fab fa-linkedin"
+    url: "#"
+
+resourceLinks: []
