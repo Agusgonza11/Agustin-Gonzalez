@@ -11,8 +11,6 @@ buttons:
     filter: tesis
   - name: Kioskito
     filter: kioskito
-  - name: University projects
-    filter: universitarios
 
 languageGroups:
   - name: Python
@@ -68,23 +66,23 @@ projects:
       - /images/projects/kioskito/6.png
     tags: ["kioskito"]
 
-  - name: TP1 — Distributed Systems
+  - name: Distributed queries with RabbitMQ
     logo: fab fa-python
     role: Developer
     timeline: "2024"
     repo: https://github.com/Agusgonza11/MisProyectos/tree/main/Lenguaje%20Python/sistemas%20distribuidos/DISTRIBUIDOS-TP1-master
     summary: "Scalable, fault-tolerant application for distributed dataset queries using **RabbitMQ**."
     language: Python
-    tags: ["universitarios"]
+    tags: []
 
-  - name: TP0 — Distributed Systems
+  - name: Inter-process communication with Docker
     logo: fab fa-python
     role: Developer
     timeline: "2024"
     repo: https://github.com/Agusgonza11/MisProyectos/tree/main/Lenguaje%20Python/sistemas%20distribuidos/Distribuidos-TP0-master
     summary: "Distributed execution, IPC, concurrency and **Docker** exercises."
     language: Python
-    tags: ["universitarios"]
+    tags: []
 
   - name: Data Organization
     logo: fab fa-python
@@ -93,7 +91,7 @@ projects:
     repo: https://github.com/Agusgonza11/MisProyectos/tree/main/Lenguaje%20Python/organizacion%20de%20datos%20
     summary: "Database queries with **Spark**, **scikit-learn** and **matplotlib** for ML and visualization."
     language: Python
-    tags: ["universitarios"]
+    tags: []
 
   - name: File Transfer
     logo: fab fa-python
@@ -102,7 +100,7 @@ projects:
     repo: https://github.com/Agusgonza11/MisProyectos/tree/main/Lenguaje%20Python/redes%20y%20aplicaciones%20distribuidas/file-transfer
     summary: "Low-level file transfer system with custom filters."
     language: Python
-    tags: ["universitarios"]
+    tags: []
 
   - name: SDN Firewall
     logo: fab fa-python
@@ -111,7 +109,7 @@ projects:
     repo: https://github.com/Agusgonza11/MisProyectos/tree/main/Lenguaje%20Python/redes%20y%20aplicaciones%20distribuidas/sdn
     summary: "Customizable firewall using **Software-Defined Networking**."
     language: Python
-    tags: ["universitarios"]
+    tags: []
 
   - name: Bitcoin Node (23C1-Rusteze)
     logo: fas fa-coins
@@ -120,7 +118,7 @@ projects:
     repo: https://github.com/Agusgonza11/MisProyectos/tree/main/Lenguaje%20Rust/taller%20de%20programacion%20/grupal/23C1-Rusteze
     summary: "Full Bitcoin node with mining, transactions, wallets and a **GTK** graphical interface."
     language: Rust
-    tags: ["universitarios"]
+    tags: []
 
   - name: Chess
     logo: fas fa-chess
@@ -129,7 +127,7 @@ projects:
     repo: https://github.com/Agusgonza11/MisProyectos/tree/main/Lenguaje%20Rust/taller%20de%20programacion%20/individual/ajedrez
     summary: "Chess game developed in Rust."
     language: Rust
-    tags: ["universitarios"]
+    tags: []
 
   - name: ConcuRide
     logo: fas fa-car
@@ -138,7 +136,7 @@ projects:
     repo: https://github.com/Agusgonza11/MisProyectos/tree/main/Lenguaje%20Rust/Tecnicas%20de%20programacion%20concurrentes/2024-2c-tp2-rustico-main
     summary: "Distributed simulation connecting passengers and drivers with a focus on concurrency and scalability."
     language: Rust
-    tags: ["universitarios"]
+    tags: []
 
   - name: TP1 — Distributed query (Rust)
     logo: fas fa-cog
@@ -147,7 +145,7 @@ projects:
     repo: https://github.com/Agusgonza11/MisProyectos/tree/main/Lenguaje%20Rust/Tecnicas%20de%20programacion%20concurrentes/2024-2c-tp1-Agusgonza11-main
     summary: "Distributed and concurrent query over a Kaggle dataset."
     language: Rust
-    tags: ["universitarios"]
+    tags: []
 
   - name: Battleship (TLD)
     logo: fas fa-ship
@@ -156,7 +154,7 @@ projects:
     repo: https://github.com/Agusgonza11/MisProyectos/tree/main/Lenguaje%20Rust/TLD
     summary: "Multiplayer battleship game with concurrent threads."
     language: Rust
-    tags: ["universitarios"]
+    tags: []
 
   - name: RESP-API — Restaurant + Telegram Bot
     logo: fas fa-gem
@@ -165,7 +163,7 @@ projects:
     repo: https://github.com/Agusgonza11/MisProyectos/tree/main/Lenguaje%20Ruby/metodos%20y%20modelos%20en%20la%20ingenieria%20del%20software%20II/tp2
     summary: "REST API and Telegram bot with hexagonal architecture, microservices and database. SCRUM, TDD and BDD."
     language: Ruby
-    tags: ["universitarios"]
+    tags: []
 
   - name: Agustin_GO
     logo: fas fa-gem
@@ -174,7 +172,7 @@ projects:
     repo: https://github.com/Agusgonza11/MisProyectos/tree/main/Lenguaje%20Ruby/metodos%20y%20modelos%20en%20la%20ingenieria%20del%20software%20II/agustin_go
     summary: "Individual Ruby exercises with test-driven methodologies."
     language: Ruby
-    tags: ["universitarios"]
+    tags: []
 
   - name: JobVacancy
     logo: fas fa-gem
@@ -183,7 +181,7 @@ projects:
     repo: https://github.com/Agusgonza11/MisProyectos/tree/main/Lenguaje%20Ruby/jobvacancy
     summary: "Pair programming project with agile methodologies."
     language: Ruby
-    tags: ["universitarios"]
+    tags: []
 
   - name: JobVacancyPareja
     logo: fas fa-gem
@@ -192,7 +190,7 @@ projects:
     repo: https://github.com/Agusgonza11/MisProyectos/tree/main/Lenguaje%20Ruby/jobvacancypareja
     summary: "Pair programming applying agile methodologies."
     language: Ruby
-    tags: ["universitarios"]
+    tags: []
 
   - name: TP1 Roma — Agile methodologies
     logo: fas fa-gem
@@ -201,7 +199,7 @@ projects:
     repo: https://github.com/Agusgonza11/MisProyectos/tree/main/Lenguaje%20Ruby/metodos%20y%20modelos%20en%20la%20ingenieria%20del%20software%20II/tp1/roma
     summary: "Group exercises for agile team management."
     language: Ruby
-    tags: ["universitarios"]
+    tags: []
 
   - name: Bank Project
     logo: fab fa-java
@@ -210,7 +208,7 @@ projects:
     repo: https://github.com/Agusgonza11/MisProyectos/tree/main/Lenguaje%20Java/proyectoBanco
     summary: "Banking system with **MVC**, **Spring Boot** and **PostgreSQL**. Transactions and dependency injection."
     language: Java
-    tags: ["universitarios"]
+    tags: []
 
   - name: Dune2000
     logo: fas fa-code
@@ -219,7 +217,7 @@ projects:
     repo: https://github.com/Agusgonza11/MisProyectos/tree/main/Lenguaje%20C%2B%2B/taller%20de%20programacion%20(veiga%20C%2B%2B)/tallerI
     summary: "Age of Empires-style game with multiplayer, threads and a graphical interface."
     language: C++
-    tags: ["universitarios"]
+    tags: []
 
   - name: Algorithms & Programming II
     logo: fas fa-code
@@ -228,7 +226,7 @@ projects:
     repo: https://github.com/Agusgonza11/MisProyectos/tree/main/Lenguaje%20C/algoritmos%20y%20programacion%20II%20
     summary: "Data structures: queues, linked lists, graphs and stacks."
     language: C
-    tags: ["universitarios"]
+    tags: []
 
   - name: Fork — Operating Systems
     logo: fas fa-code
@@ -237,7 +235,7 @@ projects:
     repo: https://github.com/Agusgonza11/MisProyectos/tree/main/Lenguaje%20C/sistemas_operativos/Individual
     summary: "Process implementation using `fork`."
     language: C
-    tags: ["universitarios"]
+    tags: []
 
   - name: Shell — Operating Systems
     logo: fas fa-terminal
@@ -246,7 +244,7 @@ projects:
     repo: https://github.com/Agusgonza11/MisProyectos/tree/main/Lenguaje%20C/sistemas_operativos/Individual
     summary: "Basic shell implementation."
     language: C
-    tags: ["universitarios"]
+    tags: []
 
   - name: TP1 — malloc implementation
     logo: fas fa-memory
@@ -255,7 +253,7 @@ projects:
     repo: https://github.com/Agusgonza11/MisProyectos/tree/main/Lenguaje%20C/sistemas_operativos/tp1/sisop_2022b_g26/malloc
     summary: "Low-level `malloc` implementation."
     language: C
-    tags: ["universitarios"]
+    tags: []
 
   - name: TP2 — malloc & Scheduling
     logo: fas fa-memory
@@ -264,7 +262,7 @@ projects:
     repo: https://github.com/Agusgonza11/MisProyectos/tree/main/Lenguaje%20C/sistemas_operativos/tp2/sisop_2022b_g26
     summary: "Extended `malloc` and scheduling algorithm."
     language: C
-    tags: ["universitarios"]
+    tags: []
 
   - name: TP3 — Filesystem
     logo: fas fa-folder-open
@@ -273,7 +271,7 @@ projects:
     repo: https://github.com/Agusgonza11/MisProyectos/tree/main/Lenguaje%20C/sistemas_operativos/tp3/sisop_2022b_g28
     summary: "Filesystem implementation in C."
     language: C
-    tags: ["universitarios"]
+    tags: []
 
   - name: DuoLibros
     logo: fab fa-node-js
@@ -282,7 +280,7 @@ projects:
     repo: https://github.com/Agusgonza11/MisProyectos/tree/main/Lenguaje%20Node/DuoLibros%20main
     summary: "REST API with backend and frontend inspired by **Goodreads**: reviews, likes and user interactions."
     language: Node.js
-    tags: ["universitarios"]
+    tags: []
 
   - name: Computer Organization (Assembler)
     logo: fas fa-microchip
@@ -291,7 +289,7 @@ projects:
     repo: https://github.com/Agusgonza11/MisProyectos/tree/main/Lenguaje%20Assembler/organizacion%20del%20computador
     summary: "Assembler exercises: matrix rotation, iteration, sums and multiplications."
     language: Assembler
-    tags: ["universitarios"]
+    tags: []
 
   - name: Algorithms & Programming III (Smalltalk)
     logo: fas fa-comment-dots
@@ -300,4 +298,4 @@ projects:
     repo: https://github.com/Agusgonza11/MisProyectos/tree/main/Lenguaje%20Smalltalk/algoritmos%20y%20programacion%20III%20(smalltalk)
     summary: "Smalltalk exercises with OOP using Pharo."
     language: Smalltalk
-    tags: ["universitarios"]
+    tags: []

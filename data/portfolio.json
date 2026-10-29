@@ -1,0 +1,388 @@
+{
+  "es": {
+    "role": "Ingeniero en Informática · Desarrollador de software",
+    "description": "Agustín González, Ingeniero en Informática de la UBA y desarrollador de software. Experiencia profesional, formación, conocimientos técnicos y proyectos.",
+    "skip": "Saltar al contenido",
+    "home": "Inicio",
+    "menu": "Menú",
+    "navigation": "Navegación principal",
+    "projects": "Proyectos",
+    "profile": "Perfil",
+    "skills": "Habilidades",
+    "experience": "Experiencia",
+    "contact": "Contacto",
+    "heroEyebrow": "PERFIL PROFESIONAL",
+    "heroOne": "Ingeniero en Informática",
+    "heroTwo": "Desarrollador de software.",
+    "heroBody": "Soy Agustín, Ingeniero en Informática de la UBA. Me dedico al desarrollo de software y a la integración de sistemas. Trabajo en proyectos empresariales y también realizo desarrollos de forma independiente.",
+    "viewProjects": "Ver mis proyectos",
+    "letsTalk": "Contactarme por mail",
+    "degree": "Ingeniero en Informática",
+    "selectedWork": "PROYECTOS DESTACADOS",
+    "projectTitle": "Lo que desarrollo.",
+    "projectIntro": "Una selección de mis proyectos: sistemas de gestión propios y el trabajo de investigación que realicé como tesis de grado.",
+    "featured": "PROYECTO DESTACADO",
+    "software": "SISTEMA DE GESTIÓN EMPRESARIAL",
+    "overview": "Vista general",
+    "enlarge": "Ampliar captura",
+    "gestionAlt": "Panel real de GestionDT con órdenes de trabajo, avisos, materiales y cuadrillas.",
+    "demoNote": "Capturas de la aplicación real con datos ficticios de demostración.",
+    "gestionDeck": "La gestión de una empresa en una misma plataforma.",
+    "gestionBody": "Desarrollo un sistema para coordinar obras, mantenimiento, depósito y cuadrillas de una empresa. El objetivo es ofrecer una plataforma en la nube, con distintos usuarios trabajando sobre una misma base de datos.",
+    "gestionPoints": [
+      {
+        "title": "Gestión de la operación",
+        "body": "Órdenes de trabajo, avisos de mantenimiento y asignación de cuadrillas en módulos relacionados."
+      },
+      {
+        "title": "Seguimiento de materiales",
+        "body": "Stock, traslados, entregas, devoluciones y registro de consumos por cuadrilla."
+      },
+      {
+        "title": "Evolución a la nube",
+        "body": "Próxima etapa: despliegue centralizado y acceso multiusuario a la información compartida de la empresa."
+      }
+    ],
+    "screenshots": [
+      {
+        "file": "inventory",
+        "label": "Depósito"
+      },
+      {
+        "file": "maintenance",
+        "label": "Mantenimiento"
+      },
+      {
+        "file": "movements",
+        "label": "Trazabilidad"
+      }
+    ],
+    "technologies": "Tecnologías",
+    "requestDemo": "Consultar sobre el proyecto",
+    "retail": "Gestión comercial",
+    "product": "PRODUCTO PROPIO / COMERCIOS",
+    "kioskitoAlt": "Interfaz de Kiosquito, software para gestión de pequeños comercios.",
+    "kioskitoDeck": "Sistema de gestión para pequeños comercios.",
+    "kioskitoBody": "ERP liviano para pequeños comercios: inventario, ventas, proveedores, estadísticas y comprobantes PDF. Distribuido con instalador y licencia; funciona offline después de la activación inicial.",
+    "stock": "Inventario",
+    "sales": "Ventas",
+    "moreScreenshots": "Ver más capturas",
+    "screenshot": "captura",
+    "pipelineAlt": "Diagrama conceptual de estandarización de datos Inscopix y CAIMAN.",
+    "standardize": "Estandarización",
+    "research": "INVESTIGACIÓN",
+    "thesis": "TESIS DE GRADO",
+    "ciDeck": "Análisis de datos para neurociencia.",
+    "ciBody": "Mi tesis de grado, desarrollada en equipo para CGK Laboratory. Creamos un pipeline en Python para estandarizar datos de Inscopix y CAIMAN y reproducir análisis de neurociencia computacional. El trabajo tiene código abierto y un preprint publicado.",
+    "data": "Datos",
+    "reproducibility": "Reproducibilidad",
+    "code": "Ver código",
+    "preprint": "Leer preprint",
+    "keepExploring": "PROYECTOS UNIVERSITARIOS",
+    "moreProjects": "Más proyectos",
+    "filter": "Filtrar por tecnología",
+    "allLanguages": "Todos los lenguajes",
+    "profileTitle": "Sobre mí.",
+    "profileLead": "Soy Ingeniero en Informática de la Universidad de Buenos Aires. Me dedico al desarrollo backend y a la integración de sistemas, principalmente dentro del entorno SAP.",
+    "profileBody": "Trabajo con SAP BTP y CPI en integraciones entre aplicaciones y procesos de negocio. También tengo experiencia con OneStream. En paralelo, desarrollo productos propios que me permiten trabajar en el diseño, la lógica de negocio, las bases de datos y la interfaz de una aplicación.",
+    "profileEnd": "Mi prioridad es entender las necesidades del cliente y desarrollar una solución que las resuelva, con una estructura que permita incorporar nuevas funciones y acompañar el crecimiento del proyecto.",
+    "technicalDegree": "Maestro Mayor de Obras",
+    "skillsTitle": "Conocimientos técnicos.",
+    "skillsIntro": "Tecnologías y herramientas que utilizo en mi trabajo y en mis proyectos.",
+    "skillGroups": [
+      {
+        "title": "SAP e integraciones",
+        "body": "Desarrollo backend e integración de aplicaciones y procesos de negocio en el entorno SAP. Experiencia adicional con OneStream.",
+        "tags": [
+          "SAP",
+          "SAP BTP",
+          "SAP CPI",
+          "OneStream",
+          "VB.NET"
+        ]
+      },
+      {
+        "title": "Backend y bases de datos",
+        "body": "APIs, lógica de negocio, modelado de datos y consultas. Desarrollo de servicios y aplicaciones de gestión.",
+        "tags": [
+          "Python",
+          "FastAPI",
+          "Java",
+          "Spring Boot",
+          "Node.js",
+          "Ruby",
+          "SQL",
+          "SQLite",
+          "PostgreSQL",
+          "MySQL",
+          "MongoDB"
+        ]
+      },
+      {
+        "title": "Sistemas y concurrencia",
+        "body": "Comunicación entre procesos, redes y procesamiento distribuido, trabajados en proyectos de la carrera.",
+        "tags": [
+          "Rust",
+          "C / C++",
+          "RabbitMQ",
+          "Docker",
+          "Linux",
+          "Bash"
+        ]
+      },
+      {
+        "title": "Desarrollo y calidad",
+        "body": "Control de versiones, pruebas y revisión de código. Uso de agentes de IA como herramienta de apoyo al desarrollo.",
+        "tags": [
+          "Git",
+          "TDD / BDD",
+          "Scrum",
+          "Revisión de código",
+          "Agentes de IA"
+        ]
+      },
+      {
+        "title": "Análisis de datos",
+        "body": "Preparación, análisis y visualización de datos. Investigación aplicada en mi tesis de grado.",
+        "tags": [
+          "Python",
+          "Pandas",
+          "NumPy",
+          "Spark",
+          "scikit-learn",
+          "Matplotlib"
+        ]
+      }
+    ],
+    "experienceTitle": "Experiencia profesional.",
+    "experienceIntro": "Mi experiencia actual en tecnología y los trabajos anteriores que forman parte de mi recorrido.",
+    "jobs": [
+      {
+        "date": "2025 — Actualidad",
+        "area": "TECNOLOGÍA EMPRESARIAL",
+        "title": "Desarrollador Backend · SAP",
+        "body": "Desarrollo y mantenimiento de soluciones SAP e integraciones con SAP BTP y CPI. Trabajo con requerimientos de negocio, implementación de funcionalidades y resolución de incidencias junto a equipos técnicos y funcionales. También participo en desarrollos sobre OneStream."
+      },
+      {
+        "date": "2019 — 2025",
+        "area": "TRABAJO AUTÓNOMO",
+        "title": "Informes técnicos y pericias mecánicas",
+        "body": "Relevamiento, documentación y elaboración de informes para juzgados de Lomas de Zamora, Lanús y Avellaneda. Coordinación de entregas con plazos exigentes y atención al detalle."
+      },
+      {
+        "date": "2018",
+        "area": "SIDERÚRGICA BARBIERI S.A.",
+        "title": "Pasantía en mantenimiento industrial",
+        "body": "Mantenimiento preventivo y correctivo, reporte de fallas y seguimiento de tareas en planta industrial."
+      }
+    ],
+    "contactEyebrow": "CONTACTO",
+    "contactOne": "¿Querés conocer más",
+    "contactTwo": "sobre mi perfil?",
+    "backTop": "Volver arriba",
+    "close": "Cerrar",
+    "closeHint": "Presioná Esc o tocá fuera de la imagen para cerrar.",
+    "pipelineOutput": "Análisis reproducible",
+    "heroSpecialties": "Desarrollo de software / Integración de sistemas",
+    "gestionStatus": "En desarrollo",
+    "thesisShort": "Tesis de grado",
+    "archiveIntro": "Trabajos que realicé durante mi formación en la UBA: sistemas distribuidos, concurrencia, redes y desarrollo de software.",
+    "archiveShow": "Ver proyectos",
+    "archiveHide": "Ocultar proyectos",
+    "contactBody": "Consultas profesionales por mail o LinkedIn.",
+    "languageLabel": "Idioma"
+  },
+  "en": {
+    "role": "Computer Engineer · Software Developer",
+    "description": "Agustín González, Computer Engineer from the University of Buenos Aires and software developer. Professional experience, education, technical skills and projects.",
+    "skip": "Skip to content",
+    "home": "Home",
+    "menu": "Menu",
+    "navigation": "Main navigation",
+    "projects": "Projects",
+    "profile": "About",
+    "skills": "Skills",
+    "experience": "Experience",
+    "contact": "Contact",
+    "heroEyebrow": "PROFESSIONAL PROFILE",
+    "heroOne": "Computer Engineer.",
+    "heroTwo": "Software developer.",
+    "heroBody": "I’m Agustín, a Computer Engineer from the University of Buenos Aires. I develop software and integrate systems, working on business projects as well as independent development.",
+    "viewProjects": "View my projects",
+    "letsTalk": "Email me",
+    "degree": "Computer Engineer",
+    "selectedWork": "FEATURED PROJECTS",
+    "projectTitle": "What I build.",
+    "projectIntro": "A selection of my projects: independent management software and the research I carried out for my undergraduate thesis.",
+    "featured": "FEATURED PROJECT",
+    "software": "BUSINESS MANAGEMENT SYSTEM",
+    "overview": "Overview",
+    "enlarge": "Enlarge screenshot",
+    "gestionAlt": "Actual GestionDT dashboard showing work orders, notices, materials and crews.",
+    "demoNote": "Actual application screenshots using fictional demonstration data.",
+    "gestionDeck": "Business operations in a single platform.",
+    "gestionBody": "I’m developing a system to coordinate a company’s work orders, maintenance, inventory and crews. The goal is a cloud platform where multiple users work with the same shared database.",
+    "gestionPoints": [
+      {
+        "title": "Operational management",
+        "body": "Work orders, maintenance notices and crew assignments in connected modules."
+      },
+      {
+        "title": "Material tracking",
+        "body": "Stock, transfers, deliveries, returns and consumption records for each crew."
+      },
+      {
+        "title": "Cloud deployment",
+        "body": "Next stage: centralized deployment and multi-user access to the company’s shared information."
+      }
+    ],
+    "screenshots": [
+      {
+        "file": "inventory",
+        "label": "Inventory"
+      },
+      {
+        "file": "maintenance",
+        "label": "Maintenance"
+      },
+      {
+        "file": "movements",
+        "label": "Traceability"
+      }
+    ],
+    "technologies": "Technologies",
+    "requestDemo": "Ask about the project",
+    "retail": "Retail management",
+    "product": "INDEPENDENT PRODUCT / RETAIL",
+    "kioskitoAlt": "Kiosquito interface, management software for small retailers.",
+    "kioskitoDeck": "Management software for small retailers.",
+    "kioskitoBody": "A lightweight ERP for small retailers: inventory, sales, suppliers, analytics and PDF receipts. Delivered with an installer and license; works offline after initial activation.",
+    "stock": "Inventory",
+    "sales": "Sales",
+    "moreScreenshots": "View more screenshots",
+    "screenshot": "screenshot",
+    "pipelineAlt": "Conceptual diagram for standardizing Inscopix and CAIMAN data.",
+    "standardize": "Standardization",
+    "research": "RESEARCH",
+    "thesis": "UNDERGRADUATE THESIS",
+    "ciDeck": "Data analysis for neuroscience.",
+    "ciBody": "My undergraduate thesis, developed with a team for CGK Laboratory. We built a Python pipeline to standardize Inscopix and CAIMAN data and reproduce computational neuroscience analyses. The project has open source code and a published preprint.",
+    "data": "Data",
+    "reproducibility": "Reproducibility",
+    "code": "View source",
+    "preprint": "Read preprint",
+    "keepExploring": "UNIVERSITY PROJECTS",
+    "moreProjects": "More projects",
+    "filter": "Filter by technology",
+    "allLanguages": "All languages",
+    "profileTitle": "About me.",
+    "profileLead": "I’m a Computer Engineer from the University of Buenos Aires. I work in backend development and systems integration, mainly within the SAP ecosystem.",
+    "profileBody": "I work with SAP BTP and CPI on integrations between applications and business processes. I also have experience with OneStream. Alongside this work, I develop independent products, covering application design, business logic, databases and user interfaces.",
+    "profileEnd": "My priority is to understand the client’s needs and develop a solution that addresses them, with a structure that allows new features to be added as the project grows.",
+    "technicalDegree": "Construction Technician",
+    "skillsTitle": "Technical skills.",
+    "skillsIntro": "Technologies and tools I use at work and in my projects.",
+    "skillGroups": [
+      {
+        "title": "SAP & integrations",
+        "body": "Backend development and integration of applications and business processes in the SAP ecosystem. Additional experience with OneStream.",
+        "tags": [
+          "SAP",
+          "SAP BTP",
+          "SAP CPI",
+          "OneStream",
+          "VB.NET"
+        ]
+      },
+      {
+        "title": "Backend & databases",
+        "body": "APIs, business logic, data modeling and queries. Development of services and management applications.",
+        "tags": [
+          "Python",
+          "FastAPI",
+          "Java",
+          "Spring Boot",
+          "Node.js",
+          "Ruby",
+          "SQL",
+          "SQLite",
+          "PostgreSQL",
+          "MySQL",
+          "MongoDB"
+        ]
+      },
+      {
+        "title": "Systems & concurrency",
+        "body": "Inter-process communication, networking and distributed processing, covered in projects during my studies.",
+        "tags": [
+          "Rust",
+          "C / C++",
+          "RabbitMQ",
+          "Docker",
+          "Linux",
+          "Bash"
+        ]
+      },
+      {
+        "title": "Development & quality",
+        "body": "Version control, testing and code review. Use of AI agents as a development tool.",
+        "tags": [
+          "Git",
+          "TDD / BDD",
+          "Scrum",
+          "Code review",
+          "AI agents"
+        ]
+      },
+      {
+        "title": "Data analysis",
+        "body": "Data preparation, analysis and visualization. Applied research in my undergraduate thesis.",
+        "tags": [
+          "Python",
+          "Pandas",
+          "NumPy",
+          "Spark",
+          "scikit-learn",
+          "Matplotlib"
+        ]
+      }
+    ],
+    "experienceTitle": "Professional experience.",
+    "experienceIntro": "My current work in technology and the earlier roles that are part of my background.",
+    "jobs": [
+      {
+        "date": "2025 — Present",
+        "area": "ENTERPRISE TECHNOLOGY",
+        "title": "Backend Developer · SAP",
+        "body": "Development and maintenance of SAP solutions and integrations using SAP BTP and CPI. Work on business requirements, feature implementation and issue resolution alongside technical and functional teams. I also contribute to OneStream development."
+      },
+      {
+        "date": "2019 — 2025",
+        "area": "INDEPENDENT WORK",
+        "title": "Technical reports & mechanical assessments",
+        "body": "Research, documentation and technical reports for courts in Lomas de Zamora, Lanús and Avellaneda. Coordinating time-sensitive deliveries with close attention to detail."
+      },
+      {
+        "date": "2018",
+        "area": "SIDERÚRGICA BARBIERI S.A.",
+        "title": "Industrial maintenance internship",
+        "body": "Preventive and corrective maintenance, fault reporting and operational task tracking in an industrial plant."
+      }
+    ],
+    "contactEyebrow": "CONTACT",
+    "contactOne": "Want to learn more",
+    "contactTwo": "about my background?",
+    "backTop": "Back to top",
+    "close": "Close",
+    "closeHint": "Press Esc or click outside the image to close.",
+    "pipelineOutput": "Reproducible analysis",
+    "heroSpecialties": "Software development / Systems integration",
+    "gestionStatus": "In development",
+    "thesisShort": "Undergraduate thesis",
+    "archiveIntro": "Projects from my studies at UBA, covering distributed systems, concurrency, networking and software development.",
+    "archiveShow": "View projects",
+    "archiveHide": "Hide projects",
+    "contactBody": "Professional enquiries by email or LinkedIn.",
+    "languageLabel": "Language"
+  }
+}
